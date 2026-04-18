@@ -1,0 +1,26 @@
+provider:
+  type: github
+  url: https://github.com
+
+tagFormat: "{prefix}-v{version}"
+
+clients:
+  - prefix: mercury
+    label: CUSTOMER-MERCURY
+  - prefix: jupiter
+    label: CUSTOMER-JUPITER
+  - prefix: neptune
+    label: CUSTOMER-NEPTUNE
+
+categories:
+  feature: "New Features"
+  bug: "Bug Fixes"
+  improvement: "Improvements"
+  breaking-change: "Breaking Changes"
+
+uncategorized: lenient
+
+template: default
+
+contributors:
+  enabled: false

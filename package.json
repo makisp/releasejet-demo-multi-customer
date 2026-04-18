@@ -1,0 +1,15 @@
+{
+  "name": "releasejet-demo-multi-customer",
+  "version": "1.0.0",
+  "description": "Live demo of [ReleaseJet](https://www.releasejet.dev) running on a multi-customer repo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@makispps/releasejet": "^1.10.0"
+  }
+}
