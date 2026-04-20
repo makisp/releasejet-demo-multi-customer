@@ -9,8 +9,8 @@ One GitHub repo, three customer tracks, three distinct release note streams:
 | Customer | Tags | Latest release |
 |---|---|---|
 | Mercury | `mercury-v1.0.0` → `mercury-v1.2.0` | [mercury-v1.2.0](../../releases/tag/mercury-v1.2.0) |
-| Jupiter | `jupiter-v1.0.0` → `jupiter-v1.1.0` | [jupiter-v1.1.0](../../releases/tag/jupiter-v1.1.0) |
-| Neptune | `neptune-v1.0.0` | [neptune-v1.0.0](../../releases/tag/neptune-v1.0.0) |
+| Jupiter | `jupiter-v1.0.0` → `jupiter-v1.2.0` | [jupiter-v1.2.0](../../releases/tag/jupiter-v1.2.0) |
+| Neptune | `neptune-v1.0.0` → `neptune-v1.0.1` | [neptune-v1.0.1](../../releases/tag/neptune-v1.0.1) |
 
 Every release page you see under **[Releases →](../../releases)** was generated automatically by a GitHub Action that runs:
 
