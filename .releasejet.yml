@@ -24,3 +24,5 @@ template: default
 
 contributors:
   enabled: true
+  
+description: extract
