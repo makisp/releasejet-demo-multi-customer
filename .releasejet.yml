@@ -1,9 +1,16 @@
+# Optional. Overrides the project name shown in notifications.
+# Defaults to the last path segment of projectUrl.
+# projectName: "My Project"
+
+# Which provider hosts your repository.
 provider:
-  type: github
+  type: github            # github | gitlab
   url: https://github.com
 
-tagFormat: "{prefix}-v{version}"
+# What to summarise in release notes.
+source: issues            # issues | pull_requests
 
+# Define tag prefixes and labels for each client.
 clients:
   - prefix: mercury
     label: CUSTOMER-MERCURY
@@ -12,17 +19,32 @@ clients:
   - prefix: neptune
     label: CUSTOMER-NEPTUNE
 
+# How your git tags are structured. {version} is required; {prefix} is multi-client only.
+tagFormat: {prefix}-v{version}  # e.g. v{version}, {version}, {prefix}-v{version}
+
+# Map issue/PR labels to release-note section headings. Output order matches this map.
 categories:
   feature: "New Features"
   bug: "Bug Fixes"
   improvement: "Improvements"
   breaking-change: "Breaking Changes"
 
-uncategorized: lenient
+# How to handle issues with no matching label.
+uncategorized: lenient    # lenient | strict
 
+# Issue/PR description rendering. Renders cleaned body as a sub-bullet under each item.
+description: none         # none | extract
+
+# Release notes template. "default" is built-in; named/path values require @releasejet/pro.
 template: default
 
+# Contributors section in release notes.
 contributors:
-  enabled: true
-  
-description: extract
+  enabled: true           # true | false
+  exclude: [dependabot]   # usernames to skip (e.g. dependabot, renovate)
+
+# Jira ticket linking — append [PROJ-123] links next to each issue/PR
+# when a configured project key is detected in the title or body.
+jira:
+  baseUrl: https://yourcompany.atlassian.net
+  projects: [FEATURE, BUG]
