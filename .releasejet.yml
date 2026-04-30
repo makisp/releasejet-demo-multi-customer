@@ -33,7 +33,7 @@ categories:
 uncategorized: lenient    # lenient | strict
 
 # Issue/PR description rendering. Renders cleaned body as a sub-bullet under each item.
-description: none         # none | extract
+description: extract         # none | extract
 
 # Release notes template. "default" is built-in; named/path values require @releasejet/pro.
 template: default
